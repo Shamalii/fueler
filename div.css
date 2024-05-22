@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%; /* Adjust width as needed */
+  margin: 0 auto;
+}
+.img{
+max-height: 242px;
+height: 242px;
+width: auto;
+}
+.scroll-wrapper {
+  display: flex;
+  margin-top: 150px;
+  overflow-x: scroll; /* Keep for scrolling functionality */
+  white-space: nowrap;
+  scroll-snap-type: x mandatory; /* Enable snapping */
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.item {
+  background-color: #40643dc5;
+  display: inline-block;
+  min-width: 365px; /* Adjust width to fit 3 items */
+  min-height: 400px;
+  max-width: 565px; /* Adjust width to fit 3 items */
+  max-height: 400px;
+  margin: 0 10px;
+  text-align: center;
+  scroll-snap-align: start; /* Snap to edges */
+  border-radius: 6px;
+  font-family: sans-serif;
+  cursor: pointer; /* Change cursor to indicate clickability */
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box; /* Ensure padding adds to size */
+  pointer-events: auto; /* Enable pointer events */
+  white-space: normal;
+margin-bottom: 200px;}
+
+.item img {
+  width: 100%;
+  border-radius: 6px 6px 0 0; /* Rounded corners for top */
+}
+
+.item p {
+  margin: 0;
+  padding: 12px 0;
+  border-radius: 0 0 6px 6px; 
+  /* Rounded corners for bottom */
+}
+
+.item:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+
+.item1:hover .item2 {
+  visibility: visible;
+}
+.prev-btn,
+.next-btn {
+  border: none;
+  cursor: pointer;
+  margin-top: 150px;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #f1fdf0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #60855c;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.prev-btn {    margin-top: 0px;
+  padding: 10px 30px;
+  margin-right: 25px;
+}
+
+.next-btn {    margin-top: 0px;
+  padding: 8px 39px;
+  margin-left: 17px;
+}
+
+.prev-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+
+.item> * { /* Targets all child elements within the div */
+  pointer-events: none;
+}

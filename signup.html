@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="signup.css">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<Title>Fueler Sign Up</Title>
+</head>
+<body>
+    <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <h3>Sign Up</h3>
+        <form  method="POST" action="signupsession.php">
+        <div class="inputBox"> <input id="uname" type="text" name="username_1" placeholder="Username" pattern="[a-zA-Z0-9_]{4,20}" autocomplete="off" required> 
+            <input id="uname" type="text" name="email_1" placeholder="Email" autocomplete="off"  required>    
+            <input id="pass" type="password" name="password_1" placeholder="Password" pattern="(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}" required> 
+            <input id="age" type="text" name="age_1" placeholder="Age" autocomplete="off"  pattern="1[3-9]|[2-7][0-9]|80" title="Age must be between 13 and 80" required><br>
+      
+
+	  <div class="select-div">
+	  
+	  
+            <select name="gender_1" id="uname" class="select-gender" required >
+            <option value=""  disabled selected >Select Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            </select>
+			
+			
+          <div class="icon-container"> 
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #344d31;"></i>
+          </div>
+		  
+		  
+          
+        </div>    
+        <br> 
+        <input id="height" type="text" name="height_1" placeholder="Height in CM" autocomplete="off"  pattern="^(1\d{2}|20\d|21\d)$" title="Height must be between 100 and 210"  required>
+        <input id="weight" type="text" name="weight_1" placeholder="Weight in KG" autocomplete="off" pattern="^(5\d{1}|[6-9]\d|1\d{2}|200)$" title="Weight must be between 50 and 200" required >
+        </form> 
+        <br><br><br>
+        <input type="submit" name="data_saved" value="Sign Up" id="sub">
+    
+    </div>
+
+    
+</body>
+</html>

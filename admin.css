@@ -1,0 +1,23 @@
+.main {
+    display: flex;  /* Assuming the parent container uses flexbox */
+    margin: 0 auto;
+    width: 600px;  /* Optional: Set a width if needed */
+    margin-top: 145px;
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    background-color: #60855c;
+    padding: 50px;
+  }
+.but{
+    position: absolute;
+    margin-top: 300px;
+  }
+  .labell{
+
+    margin-right: 40px;
+  }
+  form input[type=text] {
+    width: 250px; /* Adjust width as needed */
+    height: 27px; /* Adjust height as needed */
+    /* Add other styles like padding, font-size, etc. */
+  }

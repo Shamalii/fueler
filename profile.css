@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+
+body{
+    
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+
+.title{
+
+    font-weight: bolder;
+}
+
+.container{
+ margin-top:5%;
+    max-width: 1000px;  
+      height: fit-content;                                       
+    width: 70%;
+     padding-top: 1px;
+     background-color: #60855c;
+   
+    border-radius: 5px;
+}
+
+.container-title{
+font-size: 25px;
+font-weight: 500;
+/*position: relative;*/
+}
+
+.container-title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#6a9b5c,#020012) ;
+}
+
+ .container form .user-details{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin-bottom: 5px;
+    margin: 5px 0 12px 0;
+    width: calc(100%/ 2 - 20px);
+}
+
+.user-details .input-box.details{
+    display: block;
+    font-weight: bold;
+margin-bottom: 7px;
+}
+
+.user-details .input-box input{
+height: 45px ;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 16px;
+border-bottom-width: 5px;
+transition: all 0.3s ease;
+margin-top: 5px;
+
+}
+
+.user-details .input-box input:focus,
+user-details .input-box input:valid{
+    border-color:#486b3f;
+}
+
+form .gender-details .gender-title{
+    font-weight: 500;
+    font-size: 20px;
+}
+    
+form .gender-details .category{
+    justify-content: space-between;
+    display: flex;
+    margin: 14px 0 ;
+    width: 40%;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot-one{
+border-radius: 50%;
+    height: 18px;
+background: #d9d9d9;
+    width: 18px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gender-details .category .dot-two{
+border-radius: 50%;
+    height: 18px;
+background: #d9d9d9;
+    width: 18px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~.category label .dot-one,
+#dot-2:checked ~.category label .dot-two{
+border-color: #d9d9d9;
+background: #486b3f;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+.btn{
+     width: 45px;
+    height: 45px;
+    margin-right: 150px;
+    margin-top: 20px;
+    width: 100px;
+    height: 35px;
+
+}
+
+ .btn input{
+
+   
+    
+    color: white;
+    background: rgb(180, 177, 177);
+    border: black;
+    
+    font-weight: 400;
+    font-size: 18px;
+} 
+
+form  .Activity .allergy{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+form .Activity .allergies{
+    justify-content: space-between;
+    display: flex;
+    margin: 14px 0 ;
+    width: 80%;
+}
+form .Activityy{
+
+    display: inline-flex;
+   
+    justify-content: space-between;
+    
+}
+
+form .Activityy .acttitle {
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-right: 30px;
+   
+  }
+  form .Activityy .selectdiv .selectactive{
+
+   margin-top: 08px;
+    width: 45%;
+    height: 30px;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 2px solid #ccc;
+  font-weight: 400;
+
+  }
+form .Activityy .selectdiv option {
+    
+  
+   font-size: 16px;
+   font-weight: 400;
+}
+
+form .Activityy .selectdivv .selectgoal{
+
+    margin-top: 08px;
+     width: 200px;
+     height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+   font-weight: 400;
+ 
+   }
+
+form .Activityy .goaltitle {
+   
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 285px;
+    margin-right: 30px;
+   
+  }
+
+form .Activityy .selectdivv option {
+
+   font-size: 16px;
+   font-weight: 400;
+}
+
+ .btn input:hover{
+    background: linear-gradient(135deg,#6c6e6c,#525252) ;
+    color:  white;
+
+}
+.act{ width: 170px;}
+p {
+    background-color: white;
+    width: 189px;
+    height: 39px;
+    padding-right: 0px;
+    font-size: large;
+    text-align: center;
+    padding-top: 8px;
+}
+
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+}
+.disabled {
+    pointer-events: none;
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Optional: to keep the text color consistent across different browsers */
+input.disabled::placeholder {
+    color: #6c757d;
+}
+input[type="radio"] {
+    opacity: 0.5; /* Adjust the opacity to visually indicate it's disabled */
+    pointer-events: none; /* Disable pointer events so it can't be clicked */
+}
+
+/* Optional: style label text when radio button is disabled */
+input[type="radio"]:disabled + label {
+    color: #6c757d; /* Dim the label text color */
+    cursor: not-allowed; /* Change cursor to indicate not clickable */
+}
+.mybutton{
+background-color:#dfdfdf ;
+font-size: large;
+
+}
+.mybutton:hover{
+background-color: white;
+font-size: x-large;
+}

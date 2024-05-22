@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivate Account</title>
+    <link rel="stylesheet" href="deactive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body> 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="mainDiv">
+          <div class="navbar-header" id="websitename">
+            <a class="navbar-brand" href="Main.html" id="brand">Fueler</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a class="aa" href="profile.html">Profile</a></li>
+            <li><a class="aa" href="library.html">Library</a></li>
+            <li><a class="aa" href="contact.html">Contact Us</a></li>
+            <li><a class="aa" href="abouttuss.html">About us</a></li>
+          </ul>
+        </div>
+</nav>
+    <div class="loginBox">
+    <h2 style="font-size: 25px;margin-bottom: 40px;">Deactivate Account</h2>
+    <form action="deactivate_account.php" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Deactivate Account">
+    </form>
+</div>
+</body>
+</html>

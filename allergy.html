@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title> Allergies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="active.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          if (this.checked) {
+            checkboxes.forEach(cb => {
+              if (cb !== this && cb.name === this.name) {
+                cb.checked = false;
+              }
+            });
+          }
+        });
+      });
+    </script>
+</head>
+<body>
+    
+        <div class="Activity"><br>
+
+            <h3 style="color: #e9e2d2   ;font-weight: bolder; background-color: #2e472c98; padding-top: 14px; border-radius: 10px;">Select the Allergies you have if found</h3><br><br><br>
+            <form action="allergy.php" method="POST">
+        <h4 style="font-weight: 800px;">Please Check One at the time :</h4>
+                <br><label for="Wheat" class="font2">Wheat allergy</label>
+                    <input type="checkbox" id="Wheat" name="Wheat">
+                  <br>                  <br>
+
+                    <label for="lactose" class="font2">lactose intolerance</label>
+                    <input type="checkbox" id="lactose" name="lactose">
+                  <br>                   <br>
+
+                    <label for="Nut" class="font2">Tree nut allergy</label>
+                    <input type="checkbox" id="Nut" name="Nut"> 
+             
+                  <br><br><br>
+                  <input type="submit" name="sub" value="Confirm Allergy" id="sub">
+            </form> 
+            <br>
+            
+        </div>
+        
+ 
+</body>
+</html>

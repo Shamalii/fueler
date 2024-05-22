@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Edit personal information </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="updatee.css">
+
+</head>
+
+<body>
+<div class="container">
+<div class="title">Update Your Information </div>
+<form action="hyhyhy.php" method="POST">
+    <div class="user-details">
+
+    <div class="input-box">
+    <span class="details"> Username :</span>
+    <input type="text"   placeholder="Your name" width="45px" height="100%"   >
+    </div>
+
+    <div class="input-box">
+    <span class="details"> E-mail :</span>
+    <input type="text" placeholder="Email" height="100%" width="45px">
+    </div>
+
+    <div class="input-box">
+    <span class="details"> Password :</span>
+    <input type="password" placeholder="Password" height="100%" width="45px">
+    </div>
+
+    <div class="input-box">
+    <span class="details"> Age :</span>
+    <input type="number" placeholder="Age" height="100%" width="45px">
+    </div>
+    
+
+    <div class="input-box">
+    <span class="details"> Height :</span>
+    <input type="number" placeholder="Height in cm" height="100%" width="45px">
+    </div>
+
+    <div class="input-box">
+    <span class="details"> Weight :</span>
+    <input type="number" placeholder="Weight in kg" height="100%" width="45px">   
+    </div>
+</div>    
+
+       <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+           <span class="gender-title">Gender</span>
+            <div class="category">
+            <label for="dot-1">
+                <span class="dot-one"></span>
+                <span class="gender">Male</span>
+            </label>
+
+            <label for="dot-2">
+                <span class="dot-two"></span>
+                <span class="gender">Female</span>
+            </label>
+        </div>
+       </div>
+       <div class="Activity">              
+        <span class="allergy">Update the Allergies you have if found:  </span>
+        <br>
+
+          <div class="allergies">
+              <label for="Wheat" class="font2">Wheat allergy</label>
+                <input type="checkbox" id="Wheat" name="Wheat">
+        
+
+                <label for="lactose" class="font2">Lactose intolerance</label>
+                <input type="checkbox" id="lactose" name="lactose">
+           
+
+                <label for="nut" class="font2">Tree nut allergy</label>
+                <input type="checkbox" id="nut" name="nut">  </div> </div>  
+
+                <div class="Activityy"> 
+                    
+                    <span class="acttitle"> Activity Level:  </span><br>
+                      <div class="selectdiv" >
+                          <select name="Activity Level" id="uname" class="selectactive">
+                          <option value="">Update Your Activity Level </option>
+                          <option value="veryhigh">Very High Activity</option>
+                          <option value="high">  High Activity</option>
+                          <option value="moderate">Moderate Activity</option>
+                          <option value="Moderate">Low Activity</option>
+                          <option value="Low">No Activity</option>
+                          </select>
+                          
+                      </div> 
+                  </div>
+
+<div class="button">
+    <input type="submit" value="Update" style="margin-left: 210px;" >
+</div>
+
+
+</form>
+</div>
+
+</body>
+</html>

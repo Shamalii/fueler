@@ -1,0 +1,116 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #60855c; /* Updated to the new color */
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width according to your logo size */
+  height: auto;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin-left: 1480px;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #60855c; /* Updated to the new color */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #9abf8c; /* Lighter green on hover */
+}
+
+.auth-buttons {
+  margin-top: 20px;
+}
+
+.auth-btn {
+  display: inline-block;
+  border-bottom: 2px solid #262626;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-right:60px;
+  margin-left:60px;
+width:110px;
+margin-top: 40px;
+font-weight: 600;
+}
+
+.auth-btn:hover {
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 2px 0 black
+}
+
+footer {
+  background: #60855c; /* Updated to the new color */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 30px;
+}
+.a{
+  border-bottom: 2px solid #262626
+
+
+}

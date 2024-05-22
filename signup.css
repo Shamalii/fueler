@@ -1,0 +1,161 @@
+/* Layout */
+body{
+
+ 
+     font-family: sans-serif;
+     overflow: hidden}
+   
+     @media screen and (max-width: 600px)
+     {
+         body{background-size: cover; position : fixed}
+     }
+   
+     #particles-js{
+         height: 100%
+     }
+       
+   .loginBox {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 500px;
+     min-height: 600px;
+     background-color: #60855c;
+     border-radius: 10px;
+     padding: 40px;
+     box-sizing: border-box;
+   }
+   .user{margin: 0 auto;
+     display: block;
+     margin-bottom: 20px}
+ 
+   /* Typography */
+   h3 {
+     margin: 0;
+     padding: 0 0 20px;
+     color: #ECE3CE;
+     text-align: center;
+   }
+   
+   p {
+     color: #0000ff;
+   }
+   
+   /* Forms */
+   .loginBox input {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+   
+   .loginBox input[type="text"], .loginBox input[type="password"] {
+     border: none;
+     border-bottom: 2px solid #262626;
+     outline: none;
+     height: 40px;
+     color: #ffffff;
+     background: transparent;
+     font-size: 16px;
+     padding-left: 20px;
+     box-sizing: border-box;
+   }
+ .loginBox input[type="text"]:hover, .loginBox input[type="password"]:hover{
+     color: #ECE3CE;
+     border: 1px solid #ECE3CE;
+     box-shadow: 0 0 5px #ECE3CE, 0 0 10px #ECE3CE, 0 0 15px #ECE3CE, 0 2px 0 black
+ }
+ .loginBox input[type="text"]:focus, .loginBox input[type="password"]:focus{
+     border-bottom: 2px solid #262626
+ }
+ .inputBox{
+     position: relative
+ }
+ .inputBox span{
+     position: absolute;top: 10px;color: #262626
+ }
+ .loginBox input[type="submit"]{
+     border: none;
+     outline: none;
+     height: 40px;
+     font-size: 16px;
+     background: #262626;
+     color: #ECE3CE;border-radius: 20px;
+     cursor: pointer
+ }
+ .loginBox a{
+     color: #ECE3CE;
+     font-size: 14px;
+     font-weight: bold;
+     text-decoration: none;
+     text-align: center;
+     display: block}
+ p{
+     color: #0000ff
+ }
+ input[type="text"]::placeholder {
+     color: #ECE3CE;
+   }
+ input[type="password"]::placeholder {
+     color: #ECE3CE;
+   }
+   #age_1{
+    width: 80px;
+
+   }
+   #gender{
+ width: 100px;
+
+   }
+   .select-div{
+    display: flex;
+    position: relative;
+    min-width: 300px;  
+    height: 50px;
+    width: 23px;
+   }
+   .select-gender{
+    border: none;
+    border-bottom: 2px solid #262626;
+    appearance: none;
+    padding: 0 30px 0 20px;
+    width: 51%;
+    color: #ECE3CE;
+    background-color:#60855c ;
+    font-size: 16px;
+    
+   }
+   .select-div .icon-container{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 143px;
+    left: 124px;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+#height_1 {
+max-width: 140px;
+}
+#weight_1 {
+width: 140px; margin-left: 50px;
+}
+.select-gender:hover{
+    color: #ECE3CE;
+     border: 1px solid #ECE3CE;
+     box-shadow: 0 0 5px #ECE3CE, 0 0 10px #ECE3CE, 0 0 15px #ECE3CE, 0 2px 0 black
+}
+input[type="checkbox"] {
+  margin-left: 3%;
+  width: 13px;
+  height: 13px;
+}
+.font2{
+ color:#ECE3CE;font-family: sans-serif;font-size: 17px;font-style: bold; border-bottom: 2px solid #262626; padding-bottom: 7px;
+}
+.font2:hover{
+  color: #ECE3CE;
+  border: 1px solid #ECE3CE;
+  box-shadow: 0 0 5px #ECE3CE, 0 0 10px #ECE3CE, 0 0 15px #ECE3CE, 0 2px 0 black
+}

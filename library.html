@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feueler Meal Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="library.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="library.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="mainDiv">
+          <div class="navbar-header" id="websitename">
+            <a class="navbar-brand" href="Main.html" id="brand">Fueler</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a class="aa" href="profile.html">Profile</a></li>
+            <li><a class="aa" href="library.html">Library</a></li>
+            <li><a class="aa" href="contact (1).html">Contact Us</a></li>
+            <li><a class="aa" href="abouttuss (1).html">About us</a></li>
+          </ul>
+        </div>
+</nav>
+<div class="container">
+  
+  <div class="filter-section">
+    <form  action="library.php" method="post" >
+      <!-- Filter options go here -->
+      <h2 class="h2">Calories</h2>
+      <label class="lbl">
+        <input type="radio" name="calory" value="less than 300"> Less than 300 Calory
+      </label>
+      <br>
+      <label class="lbl">
+        <input type="radio" name="calory" value="less than 400"> Less than 400 Calory
+      </label>
+      <br>
+      <label class="lbl">
+        <input type="radio" name="calory" value="more than 500"> More than 500 Calory
+      </label>
+      <br>
+      
+      <h2 class="h2">Protein</h2>
+      <label class="lbl">
+        <input type="radio" name="protein" value="less than 20"> Less than 20 grams of Protein
+      </label>
+      <br>
+      <label class="lbl">
+        <input type="radio" name="protein" value="less than 40"> Less than 40 grams of Protein
+      </label>
+      <br>
+      <label class="lbl">
+        <input type="radio" name="protein" value="more than 40"> More than 40 grams of Protein
+      </label>
+      <br>
+      <!-- Add more filters as needed -->
+      <br><br>
+      <label for="" style="color: black; text-align: center;">"Press on the Button again to retrieve all of the meals"</label>
+      <button type="submit" name="submit" value="Submit" id="but">Confirm</button>
+         </form>
+
+    </div> 
+    
+
+
+  <div class="product-section">
+  
+      <!-- Add more product cards as needed -->
+  </div>
+</div>
+<div class="pagination"></div>
+
+
+
+
+<script>
+
+</script>
+</body>
+</html>

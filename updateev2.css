@@ -1,0 +1,240 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+.title{
+
+    font-weight: bolder;
+}
+.container{
+
+    max-width: 700px;
+    width: 100%;
+
+    background-color: #60855c;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container-title{
+font-size: 25px;
+font-weight: 500;
+position: relative;
+}
+
+.container-title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#6a9b5c,#020012) ;
+}
+
+ .container form .user-details{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    width: calc(100%/ 2 - 20px);
+}
+
+.user-details .input-box.details{
+    display: block;
+    font-weight: bold;
+margin-bottom: 7px;
+}
+
+.user-details .input-box input{
+height: 45px ;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 16px;
+border-bottom-width: 5px;
+transition: all 0.3s ease;
+margin-top: 5px;
+
+}
+
+.user-details .input-box input:focus,
+user-details .input-box input:valid{
+    border-color:#486b3f;
+}
+
+form .gender-details .gender-title{
+    font-weight: 500;
+    font-size: 20px;
+}
+    
+form .gender-details .category{
+    justify-content: space-between;
+    display: flex;
+    margin: 14px 0 ;
+    width: 40%;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot-one{
+border-radius: 50%;
+    height: 18px;
+background: #d9d9d9;
+    width: 18px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gender-details .category .dot-two{
+border-radius: 50%;
+    height: 18px;
+background: #d9d9d9;
+    width: 18px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~.category label .dot-one,
+#dot-2:checked ~.category label .dot-two{
+border-color: #d9d9d9;
+background: #486b3f;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+
+    height: 45px;
+    margin: 25px 0;
+}
+
+form .button input{
+
+    outline: none;
+    height: 80%;
+    width: 35%;
+    color: black;
+    background: linear-gradient(to right, #ECE3CE, #ece1c7);
+    border: none;
+    font-weight:600;
+    font-size: 16px;
+} 
+
+form  .Activity .allergy{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+form .Activity .allergies{
+    justify-content: space-between;
+    display: flex;
+    margin: 14px 0 ;
+    width: 80%;
+}
+
+form .Activityy .acttitle {
+    font-weight: 500;
+    font-size: 20px;
+   
+  }
+
+  form .goal .goaltitle {
+    font-weight: 500;
+    font-size: 20px;
+   
+  }
+  form .Activityy .selectdiv .selectactive{
+
+   margin-top: 08px;
+    width: 100%;
+    height: 30px;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 2px solid #ccc;
+  font-weight: 400;
+
+  }
+  form .goal .selectdi .selectgoal{
+
+    margin-top: 08px;
+     width: 100%;
+     height: 30px;
+    font-size: 16px;
+    /*border-radius: 5px;*/
+    border: 2px solid #ccc;
+   font-weight: 400;
+ 
+   }
+
+form .Activityy .selectdiv option {
+   /* display: flex;*/
+   font-size: 16px;
+   font-weight: 400;
+}
+
+form .goal .selectdi option {
+ /*   display: flex;*/
+   font-size: 16px;
+   font-weight: 400;
+}
+
+
+form .button input:hover{
+    background: linear-gradient(135deg,#6a9b5c,#020012) ;
+    color:  white;
+
+}
+
+form .cb {
+
+display: inline-flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+}
+
+

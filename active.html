@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="active.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <Title>Activity level and goal  </Title>
+    <script src="Macros.js"></script>
+</head>
+<body>
+   
+   
+   
+   
+  
+   
+        <div class="Activity"> 
+          <br><br><br>
+            <h3 style="color: #e9e2d2   ;font-weight: bolder; background-color: #2e472c98; padding-top: 14px; border-radius: 10px; font-size: 28px; margin-top: -60px;">Active Level</h3><br><br><br><br>
+            <form action="active.php" method="POST" id="ActiveForm" ><br><br><br>
+            <div class="select-div" style="margin-left: 15%;">
+                <select name=" activity_level" id="activity_level" class="select-Active" required>
+                
+				 <option value="" disabled selected>Select Your Activity Level</option>
+                <option value="Very High Active">Very High Active</option>
+                <option value="High Active">High Active</option>
+                <option value="Moderate Active">Moderate Active</option>
+                <option value="Low Active">Low Active</option>
+                <option value="Very Low Active">Very Low Active</option>
+                </select>
+                <div class="icon-container"> 
+                    <i id="arrow" class="fa-solid fa-caret-down fa-xl" style="color: #344d31; "></i>
+                  </div>
+            </div>    
+            <br><br><div class="icon-container"> 
+                <i id="arrow" class="fa-solid fa-caret-down fa-xl" style="color: #344d31; margin-left: 200px; position: absolute; margin-top: 16px"></i>
+                </div>
+            <select name="goal" id="goal" class="select-Active" style="width: 300px; margin-left: 65px; padding-bottom: 12px;" required >
+                
+				 <option value="" disabled selected>Select Your Goal</option>
+                <option value="Build">Building Muscles</option>
+                <option value="Maintain">Maintaining Muscles and Weight</option>
+                <option value="Lose">Loosing Fat and Maintaining Muscles</option>
+            </select>
+                
+            <br> <br><br><br><br>
+           <input type="submit" name="sub" value="Confirm" id="sub" onclick="activeLVL()">
+            </form> 
+            <br><br><br>
+            
+        </div>
+        
+    
+</body>
+</html>

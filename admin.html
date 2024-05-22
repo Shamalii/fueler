@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fueler</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="div.css">
+<link rel="stylesheet" href="admin.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="Macros.js"></script>
+<script src=></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="mainDiv">
+          <div class="navbar-header" id="websitename">
+            <a class="navbar-brand" href="#" id="brand">Fueler</a>
+          </div><p style="font-size: 35px; margin-left: 850px;color:  white;">
+          Admin Page</p>
+        </div>
+<div class="main">
+<form action="admin.php" method="POST" enctype="multipart/form-data" >
+
+
+<!-- Repeat checkboxes for other tables -->
+
+      
+                <label for="input1">Meal Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input1" name="meal_name"><br><br>
+        
+                <label for="input2">Ingredients:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input2" name="ingredients"><br><br>
+        
+                <label for="input3">Fat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input3" name="fat"><br><br>
+        
+                <label for="input4">Protein:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input4" name="protein"><br><br>
+        
+                <label for="input5">Carbs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input5" name="carbs"><br><br>
+        
+                <label for="input6">Calories:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="input6" name=" calories"><br><br>
+        <br>
+               <label for="meal_photo" style="font-size: larger;">Please choose the Meal Photo:</label> <br><br>
+            <input type="file" id="meal_photo" name="meal_photo"><br><br>
+            
+            
+            <input type="radio" id="table1" name="tables[]" value="meals">
+            <label for="table1" class="labell">Meals</label>
+            
+            <input type="radio" id="table2" name="tables[]" value="nuts_allergy">
+            <label for="table2" class="labell">Nuts Allergy</label>
+            
+            
+            
+            <input type="radio" id="table3" name="tables[]" value="wheat_allergy">
+            <label for="table3" class="labell">wheat</label>
+            
+            <input type="radio" id="table4" name="tables[]" value="lactos_allergy">
+            <label for="table4" class="labell">lactose Allergy</label>
+<br><br>
+            <input type="submit" value="Submit" style="margin-left:225px; width: 80px;">
+</nav>
+        
+
+
+       
+		
+		
+	<!-- Checkboxes for selecting tables -->
+
+    </form>
+  </div>
+</body>
+</html>

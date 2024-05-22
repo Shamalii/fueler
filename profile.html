@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="aboutUS (3).css">
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="profile.js"></script>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid" id="mainDiv">
+      <div class="navbar-header" id="websitename" style="margin-left: -15px;">
+        <a class="navbar-brand" href="Main.html" id="brand"><img src="fueler-removebg-preview.png" alt="" style="max-width: 150px; max-height: 200px;padding-bottom:20px;margin-top: -57px;margin-left: -15px;"></a>
+      </div>
+      <!-- Navigation links -->
+      <ul class="nav navbar-nav" style="margin-top:17px ;">
+        <li><a class="aa" href="profile.html">Profile</a></li>
+        <li><a class="aa" href="library.html">Library</a></li>
+        <li><a class="aa" href="contact (1).html">Contact Us</a></li>
+        <li><a class="aa" href="abouttuss (1).html">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sign Up form -->
+    
+  <div class="container">
+    
+
+   
+    <form action="#">
+        <div class="user-details">     
+        <div class="input-box">
+        <span class="details" style="color: black;"> Username :</span>
+        <input type="text" placeholder="Username" height="100%" width="45px" id="uname" class="disabled">
+        </div>
+    
+        <div class="input-box">
+        <span class="details" style="color: black;"> E-mail :</span>
+        <input type="text" placeholder="Email" height="100%" width="45px" id="email" class="disabled">
+        </div>
+    
+        
+        <div class="input-box">
+        <span class="details" style="color: black;"> Age :</span>
+        <input type="number" placeholder="Age" height="100%" width="45px" id="age" class="disabled">
+        </div>
+        
+    
+        <div class="input-box">
+        <span class="details" style="color: black;"> Height :</span>
+        <input type="number" placeholder="Height in cm" height="100%" width="45px" id="height" class="disabled">
+        </div>
+    
+        <div class="input-box">
+        <span class="details" style="color:black;"> Weight :</span>
+        <input type="number" placeholder="Weight in kg" height="100%" width="45px" id="weight" class="disabled"> 
+        </div>
+          
+     
+    </div>    
+   
+    
+           <div class="gender-details" id="radio-container">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+               <span class="gender-title" style="color: black;">Gender</span>
+                <div class="category">
+                <label for="dot-1">
+                    <span class="dot-one"></span>
+                    <span class="gender">Male</span>
+                </label>
+    
+                <label for="dot-2">
+                    <span class="dot-two"></span>
+                    <span class="gender">Female</span>
+                </label>
+            </div>
+           </div>
+           <div class="Activity">              
+            <span class="allergy" style="color: black;"> The Allergies you have checked:  </span>
+            <br>
+    
+              <div class="allergies">
+                  <label for="Wheat" class="font2" >Wheat allergy</label>
+                    <input type="checkbox" id="wheat" name="Wheat" id="wheatCheckbox">
+            
+    
+                    <label for="lactose" class="font2">Lactose intolerance</label>
+                    <input type="checkbox" id="lactose" name="lactose" id="lactoseCheckbox">
+               
+    
+                    <label for="nut" class="font2">Tree nut allergy</label>
+                    <input type="checkbox" id="nut" name="nut" id="nutCheckbox">  </div> </div>  
+                    <br>
+    
+                    <div class="Activityy"> 
+                        
+                        <span class="acttitle" style="color: black; text-align: center;"> Activity Level :  </span><br>
+                           
+                        <p class="act" id="activity_level" style="width: 189px;">Your Activity Level</p>
+                              
+                          <span class="goaltitle" style="color: black; text-align: center;">      Your Goal :  </span><br>
+                         
+                              <p id="goal"> Your goal </p>
+                              
+                              
+                           
+                      </div>
+    
+                      
+    
+    
+    
+    </form>
+    <button onclick="redirectToPage()" style="width: 125px; height: 45px; margin-left: 420px; margin-bottom: 20px;margin-top: 30px; border-radius:5px;" class="mybutton">Update</button>
+    <div style="margin-left:0px;padding-bottom: 20px; text-decoration: underline;"> <a href="deactivate_account.html" style="color: black; font-size: 15px">Press here to <ff style="color: rgb(201, 0, 0);">deactivate</ff> the account</a></div></div> 
+    <br><br><br>
+    
+    <script>
+      // Function to redirect to another page
+      function redirectToPage() {
+          // Replace 'destination.html' with the URL of the page you want to redirect to
+          window.location.href = 'update.html';
+      }
+  </script>
+    </body>
+   
+  </html>
